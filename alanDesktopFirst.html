@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerbinatti Desktop First</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: white;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 50px 0;
+            color: red;
+        }
+
+        .profile {
+            margin-bottom: 40px;
+            text-align: center; 
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto;
+            overflow: hidden; 
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            background-color: #ccc;
+        }
+
+        .profile-picture img {
+            width: 100%;   
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #e0e0e0;
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+
+            .card img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-picture">
+                <img src="https://fferj.azurewebsites.net/admin/AzureStorage/GetImage?path=2016/4/12/cd232328-abec-4f47-9015-585e40217e36.jpg" alt="Imagem de perfil">
+            </div>
+            <h1>João Pedro Zerbinatti Muniz</h1>
+            <p>O mais lindo do mundo</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/6030/6030844.png">
+                <p>Lorem Ipsum</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/6030/6030844.png">
+                <p>Lorem Ipsum</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/6030/6030844.png">
+                <p>Lorem Ipsum</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
